@@ -10,93 +10,63 @@
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="tables" navText="Tables">
+        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="booking" navText="Booking">
           <template v-slot:icon>
-            <i class="material-icons-round opacity-10 fs-5">table_view</i>
+            <i class="material-icons-round opacity-10 fs-5">event</i>
           </template>
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="billing" navText="Billing">
-          <template v-slot:icon>
-            <i class="material-icons-round opacity-10 fs-5">receipt_long</i>
-          </template>
-        </sidenav-collapse>
-      </li>
-      <li class="nav-item">
-        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="rtl-page" navText="Rtl">
-          <template v-slot:icon>
-            <i class="material-icons-round opacity-10 fs-5">format_textdirection_r_to_l</i>
-          </template>
-        </sidenav-collapse>
-      </li>
-      <li class="nav-item">
-        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="notifications"
-          navText="Notifications">
-          <template v-slot:icon>
-            <i class="material-icons-round opacity-10 fs-5">notifications</i>
-          </template>
-        </sidenav-collapse>
-      </li>
-
-      <li class="mt-3 nav-item">
-        <h6 class="text-xs ps-4 text-uppercase font-weight-bolder text-white"
-          :class="this.$store.state.isRTL ? 'me-4' : 'ms-2'">
-          EXAMPLES (API)
-        </h6>
-      </li>
-
-      <li class="nav-item">
-        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="user-profile"
-          navText="User Profile">
-          <template v-slot:icon>
-            <i class="material-icons-round opacity-10 fs-5">person</i>
-          </template>
-        </sidenav-collapse>
-      </li>
-      <li class="nav-item">
-        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="users" navText="Users">
+        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="members" navText="Members">
           <template v-slot:icon>
             <i class="material-icons-round opacity-10 fs-5">people</i>
           </template>
         </sidenav-collapse>
       </li>
+      <li class="nav-item">
+        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="messages" navText="Messages">
+          <template v-slot:icon>
+            <i class="material-icons-round opacity-10 fs-5">message</i>
+          </template>
+        </sidenav-collapse>
+      </li>
+      <li class="nav-item">
+        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="resources" navText="Resources">
+          <template v-slot:icon>
+            <i class="material-icons-round opacity-10 fs-5">folder</i>
+          </template>
+        </sidenav-collapse>
+      </li>
 
-
+      <li class="nav-item">
+        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="support" navText="Support">
+          <template v-slot:icon>
+            <i class="material-icons-round opacity-10 fs-5">help</i>
+          </template>
+        </sidenav-collapse>
+      </li>
 
       <li class="mt-3 nav-item">
         <h6 class="text-xs ps-4 text-uppercase font-weight-bolder text-white"
           :class="this.$store.state.isRTL ? 'me-4' : 'ms-2'">
-          ACCOUNT PAGES
+          ACCOUNT
         </h6>
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="profile" navText="Profile">
+        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="user-profile" navText="Profile">
           <template v-slot:icon>
             <i class="material-icons-round opacity-10 fs-5">person</i>
-          </template>
-        </sidenav-collapse>
-      </li>
-      <li class="nav-item">
-        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="sign-in" navText="SignIn">
-          <template v-slot:icon>
-            <i class="material-icons-round opacity-10 fs-5">login</i>
-          </template>
-        </sidenav-collapse>
-      </li>
-      <li class="nav-item">
-        <sidenav-collapse url="#" :aria-controls="''" v-bind:collapse="false" collapseRef="sign-up" navText="SignUp">
-          <template v-slot:icon>
-            <i class="material-icons-round opacity-10 fs-5">assignment</i>
           </template>
         </sidenav-collapse>
       </li>
     </ul>
     <div class="sidenav-footer position-absolute w-100 bottom-0">
       <div class="mx-3">
-        <a class="btn mt-4 w-100" :class="`bg-gradient-${this.$store.state.color}`"
-          href="https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro?_ga=2.100464214.933780196.1684307546-944306388.1662358829">Upgrade to pro</a>
+        <div class="text-center text-white text-sm mt-4">
+          <p class="mb-0">CoWork Space</p>
+          <p class="mb-0 text-xs opacity-8">Management Dashboard</p>
+        </div>
       </div>
     </div>
   </div>

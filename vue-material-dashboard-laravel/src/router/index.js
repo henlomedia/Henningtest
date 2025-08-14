@@ -1,18 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
-import Tables from "../views/Tables.vue";
-import Billing from "../views/Billing.vue";
-import RTL from "../views/Rtl.vue";
-import Notifications from "../views/Notifications.vue";
-import Profile from "../views/Profile.vue";
-import SignIn from "../views/SignIn.vue";
-import SignUp from "../views/SignUp.vue";
+import Booking from "../views/Booking.vue";
+import Members from "../views/Members.vue";
+import Messages from "../views/Messages.vue";
+import Resources from "../views/Resources.vue";
+import Support from "../views/Support.vue";
 import Login from "../views/examples-api/Login.vue";
 import Signup from "../views/examples-api/Signup.vue";
 import PasswordForgot from "../views/examples-api/PasswordForgot.vue";
 import PasswordReset from "../views/examples-api/PasswordReset.vue";
 import UserProfile from "../views/examples-api/profile/UserProfile.vue";
-import Users from "../views/examples-api/users/UsersList.vue";
 
 const routes = [
   {
@@ -26,39 +23,29 @@ const routes = [
     component: Dashboard,
   },
   {
-    path: "/tables",
-    name: "Tables",
-    component: Tables,
+    path: "/booking",
+    name: "Booking",
+    component: Booking,
   },
   {
-    path: "/billing",
-    name: "Billing",
-    component: Billing,
+    path: "/members",
+    name: "Members",
+    component: Members,
   },
   {
-    path: "/rtl-page",
-    name: "RTL",
-    component: RTL,
+    path: "/messages",
+    name: "Messages",
+    component: Messages,
   },
   {
-    path: "/notifications",
-    name: "Notifications",
-    component: Notifications,
+    path: "/resources",
+    name: "Resources",
+    component: Resources,
   },
   {
-    path: "/profile",
-    name: "Profile",
-    component: Profile,
-  },
-  {
-    path: "/sign-in",
-    name: "SignIn",
-    component: SignIn,
-  },
-  {
-    path: "/sign-up",
-    name: "SignUp",
-    component: SignUp,
+    path: "/support",
+    name: "Support",
+    component: Support,
   },
   {
     path: "/login",
@@ -84,11 +71,6 @@ const routes = [
     path: "/user-profile",
     name: "User Profile",
     component: UserProfile
-  },
-  {
-    path: '/users',
-    name: "Users",
-    component: Users
   }
 ];
 
